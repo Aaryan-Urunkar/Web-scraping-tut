@@ -85,7 +85,7 @@ const transporter = nodemailer.createTransport({
     user: 'aaryanur7@gmail.com',
     pass: process.env.APP_PASSWORD,
   },
-  maxConnections: 1
+  
 })
 
 export const sendEmail = async (emailContent: EmailContent, sendTo: string[]) => {
